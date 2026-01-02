@@ -1,4 +1,4 @@
-# Personal Portfolio Website
+# Personal Portfolio Website - Acamaro Cutcher
 
 A modern, responsive personal portfolio website built with Next.js, TypeScript, and TailwindCSS. Features GitHub project integration, dark mode, and a beautiful UI design.
 
