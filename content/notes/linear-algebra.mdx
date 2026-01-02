@@ -1,0 +1,45 @@
+---
+title: "Linear Algebra - Class Notes"
+course: "MATH 3020"
+date: "2026-01-02"
+topics: ["matrices", "vectors", "eigenvalues"]
+---
+
+# Linear Algebra Notes
+
+## Lecture 1: Vectors and Matrices
+
+### Vector Spaces
+
+A **vector space** is a set $V$ with operations of addition and scalar multiplication satisfying:
+
+1. Closure under addition: $\mathbf{u} + \mathbf{v} \in V$
+2. Commutativity: $\mathbf{u} + \mathbf{v} = \mathbf{v} + \mathbf{u}$
+3. Associativity: $(\mathbf{u} + \mathbf{v}) + \mathbf{w} = \mathbf{u} + (\mathbf{v} + \mathbf{w})$
+
+### Matrix Multiplication
+
+For matrices $A$ and $B$:
+
+$$
+(AB)_{ij} = \sum_{k} A_{ik} B_{kj}
+$$
+
+### Eigenvalues and Eigenvectors
+
+For a square matrix $A$, an **eigenvector** $\mathbf{v}$ satisfies:
+
+$$
+A\mathbf{v} = \lambda \mathbf{v}
+$$
+
+where $\lambda$ is the **eigenvalue**.
+
+## Key Theorem
+
+**Spectral Theorem**: Every symmetric matrix can be diagonalized by an orthogonal matrix.
+
+## Practice Problems
+
+1. Find the eigenvalues of $\begin{bmatrix} 2 & 1 \\ 1 & 2 \end{bmatrix}$
+2. Prove that the trace equals the sum of eigenvalues

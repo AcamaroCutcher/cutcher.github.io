@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: ["main"]
+    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -11,6 +11,7 @@ permissions:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -27,7 +28,7 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Add .nojekyll
+      - name: Add .nojekyll (prevent Jekyll processing)
         run: touch ./out/.nojekyll
 
       - name: Deploy to gh-pages
